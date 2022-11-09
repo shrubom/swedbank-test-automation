@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="FactoringTestSuite">
+    <test name="FactoringPageTests" preserve-order="true" thread-count="10" parallel="methods">
+        <classes>
+            <!--<class name="com.swedbank.factoring.test.automation.tests.Test_LoginPage"/>-->
+        <class name="com.swedbank.factoring.test.automation.tests.Test_LandingPage"/> 
+      <!--     <class name="com.swedbank.factoring.test.automation.tests.Test_FactoringCalculator"/>-->
+        </classes>
+    </test>
+</suite>

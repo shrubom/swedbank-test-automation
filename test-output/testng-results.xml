@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-09T02:47:44 EET" name="Default suite" finished-at="2022-11-09T02:48:33 EET" duration-ms="48992">
+    <groups>
+    </groups>
+    <test started-at="2022-11-09T02:47:44 EET" name="Default test" finished-at="2022-11-09T02:48:33 EET" duration-ms="48992">
+      <class name="com.swedbank.factoring.automation.testcases.Test_LandingPage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:44 EET" name="setup" finished-at="2022-11-09T02:47:49 EET" duration-ms="4879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="landingPage()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:49 EET" name="landingPage" finished-at="2022-11-09T02:47:49 EET" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:49 EET" name="setup" finished-at="2022-11-09T02:47:53 EET" duration-ms="3858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="becomeACustomer()[pri:1, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:53 EET" name="becomeACustomer" finished-at="2022-11-09T02:47:55 EET" duration-ms="1508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- becomeACustomer -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:55 EET" name="setup" finished-at="2022-11-09T02:47:58 EET" duration-ms="3885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigatingTabs()[pri:2, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:58 EET" name="navigatingTabs" finished-at="2022-11-09T02:48:33 EET" duration-ms="34783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatingTabs -->
+      </class> <!-- com.swedbank.factoring.automation.testcases.Test_LandingPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
