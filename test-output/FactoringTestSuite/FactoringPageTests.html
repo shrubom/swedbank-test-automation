@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FactoringPageTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 04 21:22:52 EET 2022</td>
+<td>Started on:</td><td>Thu Nov 10 01:08:44 EET 2022</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1379 ms)</td>
+<tr><td>Total time:</td><td>91 seconds (91281 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,351 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.commissionFeesAlphaNumericValidation()'><b>commissionFeesAlphaNumericValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=107.0.5304.87)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;GE00371M.lan&apos;, ip: &apos;2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6.8&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3fe86dbdc88b9ec0d7ee1ca4a6d2fb8, actions {actions=[org.openqa.selenium.interactions.Sequence@67300583]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54588}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54588/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a3fe86dbdc88b9ec0d7ee1ca4a6d2fb8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at com.swedbank.factoring.automation.pages.FactoringCalculatorPage.commissionFeesAlphaNumericValidation(FactoringCalculatorPage.java:244)
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.commissionFeesAlphaNumericValidation(Test_FactoringCalculator.java:107)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace510782130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510782130'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=107.0.5304.87)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;GE00371M.lan&apos;, ip: &apos;2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6.8&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3fe86dbdc88b9ec0d7ee1ca4a6d2fb8, actions {actions=[org.openqa.selenium.interactions.Sequence@67300583]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54588}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54588/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a3fe86dbdc88b9ec0d7ee1ca4a6d2fb8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at com.swedbank.factoring.automation.pages.FactoringCalculatorPage.commissionFeesAlphaNumericValidation(FactoringCalculatorPage.java:244)
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.commissionFeesAlphaNumericValidation(Test_FactoringCalculator.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_LoginPage.usingApplyButton()'><b>usingApplyButton</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_LoginPage</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;button -left&apos; and text()=&apos;Apply&apos;]&quot;}
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;GE00371M.lan&apos;, ip: &apos;2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6.8&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef852c7ec8d6641cfd65011b5be69eb4, findElement {using=xpath, value=//button[@class=&apos;button -left&apos; and text()=&apos;Apply&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54133/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef852c7ec8d6641cfd65011b5be69eb4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.swedbank.factoring.automation.pages.LoginPage.usingApplyButton(LoginPage.java:77)
+	at com.swedbank.factoring.automation.testcases.Test_LoginPage.usingApplyButton(Test_LoginPage.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1719061333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1719061333'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;button -left&apos; and text()=&apos;Apply&apos;]&quot;}
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;GE00371M.lan&apos;, ip: &apos;2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6.8&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef852c7ec8d6641cfd65011b5be69eb4, findElement {using=xpath, value=//button[@class=&apos;button -left&apos; and text()=&apos;Apply&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54133/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef852c7ec8d6641cfd65011b5be69eb4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.swedbank.factoring.automation.pages.LoginPage.usingApplyButton(LoginPage.java:77)
+	at com.swedbank.factoring.automation.testcases.Test_LoginPage.usingApplyButton(Test_LoginPage.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>35</td>
+<td>com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.invoiceAmountEmptyValidation()'><b>invoiceAmountEmptyValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td><div><pre>java.lang.AssertionError: expected [This field is required] but found [Please enter a valid number]
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.invoiceAmountEmptyValidation(Test_FactoringCalculator.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace235125989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace235125989'><pre>java.lang.AssertionError: expected [This field is required] but found [Please enter a valid number]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.invoiceAmountEmptyValidation(Test_FactoringCalculator.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.sectionDefaultValidations()'><b>sectionDefaultValidations</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;GE00371M.lan&apos;, ip: &apos;2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6.8&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc7251f3f8af14736eda1e8f23b973c7, getElementAttribute {id=c13ba8b2-9bb2-4cd9-9d34-063fb9d076de, name=value}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54136}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54136/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (bc7251f3f8af14736eda1e8f23b973c7)] -&gt; xpath: //input[@name=&apos;calc_d5&apos;]]
+Session ID: bc7251f3f8af14736eda1e8f23b973c7
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getAttribute(Unknown Source)
+	at com.swedbank.factoring.automation.pages.FactoringCalculatorPage.getDefaultInvoiceAmount(FactoringCalculatorPage.java:62)
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.sectionDefaultValidations(Test_FactoringCalculator.java:19)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1354761645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1354761645'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;GE00371M.lan&apos;, ip: &apos;2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6.8&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc7251f3f8af14736eda1e8f23b973c7, getElementAttribute {id=c13ba8b2-9bb2-4cd9-9d34-063fb9d076de, name=value}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54136}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54136/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (bc7251f3f8af14736eda1e8f23b973c7)] -&gt; xpath: //input[@name=&apos;calc_d5&apos;]]
+Session ID: bc7251f3f8af14736eda1e8f23b973c7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getAttribute(Unknown Source)
+	at com.swedbank.factoring.automation.pages.FactoringCalculatorPage.getDefaultInvoiceAmount(FactoringCalculatorPage.java:62)
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.sectionDefaultValidations(Test_FactoringCalculator.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>3</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.docAndFeesInvoiceListValidation()'><b>docAndFeesInvoiceListValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.87)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;GE00371M.lan&apos;, ip: &apos;2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6.8&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4a513d0098e625afadd4c1c2ac97f1e, clickElement {id=603ca9f6-fa32-4a4d-bb3e-13fb59c1f754}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54650/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (c4a513d0098e625afadd4c1c2ac97f1e)] -&gt; xpath: //a[text()=&apos;List of invoices&apos;]]
+Session ID: c4a513d0098e625afadd4c1c2ac97f1e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.swedbank.factoring.automation.pages.FactoringCalculatorPage.docAndFeesInvoiceListValidation(FactoringCalculatorPage.java:323)
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.docAndFeesInvoiceListValidation(Test_FactoringCalculator.java:148)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387701595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387701595'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.87)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;GE00371M.lan&apos;, ip: &apos;2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6.8&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4a513d0098e625afadd4c1c2ac97f1e, clickElement {id=603ca9f6-fa32-4a4d-bb3e-13fb59c1f754}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54650/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (c4a513d0098e625afadd4c1c2ac97f1e)] -&gt; xpath: //a[text()=&apos;List of invoices&apos;]]
+Session ID: c4a513d0098e625afadd4c1c2ac97f1e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at com.swedbank.factoring.automation.pages.FactoringCalculatorPage.docAndFeesInvoiceListValidation(FactoringCalculatorPage.java:323)
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.docAndFeesInvoiceListValidation(Test_FactoringCalculator.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>32</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,10 +420,90 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.swedbank.factoring.test.automation.tests.Test_LoginPage.landingPage()'><b>landingPage</b><br>Test class: com.swedbank.factoring.test.automation.tests.Test_LoginPage</td>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.interestRateAboveLimitsValidation()'><b>interestRateAboveLimitsValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
 <td></td>
 <td>1</td>
-<td>com.swedbank.factoring.test.automation.tests.Test_LoginPage@715d6168</td></tr>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_LandingPage.landingPage()'><b>landingPage</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_LandingPage</td>
+<td></td>
+<td>0</td>
+<td>com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.invoiceAmountAplhaNumericValidation()'><b>invoiceAmountAplhaNumericValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>1</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.howToApplyTabValidation()'><b>howToApplyTabValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>1</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_LandingPage.langOnLandingPage()'><b>langOnLandingPage</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_LandingPage</td>
+<td></td>
+<td>39</td>
+<td>com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.docAndfeesClaimDocValidation()'><b>docAndfeesClaimDocValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>4</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.advanceRateValidation()'><b>advanceRateValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>1</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_LoginPage.usingSwedBanklogo()'><b>usingSwedBanklogo</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_LoginPage</td>
+<td></td>
+<td>10</td>
+<td>com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.invoiceAmountZeroValidation()'><b>invoiceAmountZeroValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_LandingPage.becomeACustomer()'><b>becomeACustomer</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_LandingPage</td>
+<td></td>
+<td>7</td>
+<td>com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_LandingPage.navigatingTabs()'><b>navigatingTabs</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_LandingPage</td>
+<td></td>
+<td>35</td>
+<td>com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_LoginPage.usingLoginButton()'><b>usingLoginButton</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_LoginPage</td>
+<td></td>
+<td>14</td>
+<td>com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.paymentTermValidation()'><b>paymentTermValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>1</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.applyButtonValidation()'><b>applyButtonValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>1</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.docAndFeesTabGeneralConditionsValidation()'><b>docAndFeesTabGeneralConditionsValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>2</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.interestRateAlphaNumericValidation()'><b>interestRateAlphaNumericValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
+<tr>
+<td title='com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.interestRateEmptyValidation()'><b>interestRateEmptyValidation</b><br>Test class: com.swedbank.factoring.automation.testcases.Test_FactoringCalculator</td>
+<td></td>
+<td>1</td>
+<td>com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082</td></tr>
 </table><p>
 </body>
 </html>

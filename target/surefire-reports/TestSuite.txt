@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 62.564 s <<< FAILURE! - in TestSuite
+invoiceAmountEmptyValidation(com.swedbank.factoring.automation.testcases.Test_FactoringCalculator)  Time elapsed: 0.426 s  <<< FAILURE!
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: 
+move target out of bounds
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfb7a5e6dd5e1784940444a175ad6b0, actions {actions=[org.openqa.selenium.interactions.Sequence@30163394]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:55127}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55127/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dfb7a5e6dd5e1784940444a175ad6b0
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.invoiceAmountEmptyValidation(Test_FactoringCalculator.java:45)
+
+sectionDefaultValidations(com.swedbank.factoring.automation.testcases.Test_FactoringCalculator)  Time elapsed: 0.622 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='D6']"}
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8fb4a5d1d358d47da4f520b606a85756, findElement {using=xpath, value=//select[@id='D6']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:55125}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55125/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8fb4a5d1d358d47da4f520b606a85756
+	at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.sectionDefaultValidations(Test_FactoringCalculator.java:20)
+

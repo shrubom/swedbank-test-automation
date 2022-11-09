@@ -9,6 +9,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BrowserUtility {
 
 	public static WebDriver startApplication(WebDriver driver, String browserName, String appURL) {
+		
+		
 		if (browserName.equals("Chrome")) {
 			driver = WebDriverManager.chromedriver().create();
 
@@ -22,9 +24,9 @@ public class BrowserUtility {
 			driver = WebDriverManager.iedriver().create();
 		} else {
 			System.out.println("We do not support this browser");
-		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		}		
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get(appURL);
 
 		return driver;

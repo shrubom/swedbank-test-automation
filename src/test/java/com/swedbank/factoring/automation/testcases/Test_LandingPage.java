@@ -1,38 +1,27 @@
 package com.swedbank.factoring.automation.testcases;
 
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.swedbank.factoring.automation.pages.BaseClass;
 import com.swedbank.factoring.automation.pages.LandingPage;
-import com.swedbank.factoring.automation.utilities.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Test_LandingPage extends BaseClass{
-	private boolean cookieClicked = false;
-//	WebDriver driver = WebDriverManager.chromedriver().create();
+public class Test_LandingPage extends BaseClass {
 
 	@Test(priority = 0)
-	public void landingPage() {
-
-		LandingPage landingPage = PageFactory.initElements(driver, LandingPage.class);
+	public void landingPage() throws InterruptedException {
+		extentLogger = extentReport.createTest("Validating the Factoring Text on the landing page");
+		LandingPage landingPage = PageFactory.initElements(BaseClass.driver, LandingPage.class);
+		extentLogger.info("Grabbing the factoring text");
 		String textPresent = landingPage.getFactoringText();
-		Assert.assertEquals(true, textPresent.contains("Factoring calculator"));
-
+		Assert.assertEquals(true, textPresent.contains(excel.getStringData("LandingPage", 0, 0)));
+		extentLogger.pass("Successfully found the text");
 	}
 
 	@Test(priority = 1)
 	public void becomeACustomer() throws InterruptedException {
-
-		LandingPage landingPage = PageFactory.initElements(driver, LandingPage.class);
+		LandingPage landingPage = PageFactory.initElements(BaseClass.driver, LandingPage.class);
 		landingPage.becomeCustomer();
 		Assert.assertTrue(landingPage.bankCustomerbuttonEnabled());
 		Assert.assertTrue(landingPage.addAccountButtonEnabled());
@@ -41,8 +30,7 @@ public class Test_LandingPage extends BaseClass{
 
 	@Test(priority = 2)
 	public void navigatingTabs() throws InterruptedException {
-
-		LandingPage landingPage = PageFactory.initElements(driver, LandingPage.class);
+		LandingPage landingPage = PageFactory.initElements(BaseClass.driver, LandingPage.class);
 		landingPage.homeClick();
 		Assert.assertEquals(landingPage.loginText(), "Log in with");
 		landingPage.otherTabClick();
@@ -50,15 +38,13 @@ public class Test_LandingPage extends BaseClass{
 		Assert.assertTrue(displayedText.contains("Factoring calculator"));
 
 	}
-	
 
-//	@Test(priority=1)
-//	public void langOnLandingPage() throws InterruptedException {
-//		// Choosing different languages
-//
-//		getBalancesForLang("LT");
-//		getBalancesForLang("RU");
-//
-//	}
+	@Test(priority = 3)
+	public void langOnLandingPage() throws InterruptedException {
+		LandingPage landingPage = PageFactory.initElements(BaseClass.driver, LandingPage.class);
+		landingPage.getPagesForLang("LT");
+		landingPage.getPagesForLang("RU");
+
+	}
 
 }

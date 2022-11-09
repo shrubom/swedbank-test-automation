@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.swedbank.factoring.automation.testcases.Test_LandingPage">
+      <class name="com.swedbank.factoring.automation.testcases.Test_LoginPage">
         <methods>
           <include name="setup"/>
-          <include name="navigatingTabs"/>
+          <include name="usingSwedBanklogo"/>
         </methods>
-      </class> <!-- com.swedbank.factoring.automation.testcases.Test_LandingPage -->
+      </class> <!-- com.swedbank.factoring.automation.testcases.Test_LoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,37 +1,711 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="3" total="25" passed="17" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-09T02:47:44 EET" name="Default suite" finished-at="2022-11-09T02:48:33 EET" duration-ms="48992">
+  <suite started-at="2022-11-10T01:08:44 EET" name="FactoringTestSuite" finished-at="2022-11-10T01:10:16 EET" duration-ms="91281">
     <groups>
     </groups>
-    <test started-at="2022-11-09T02:47:44 EET" name="Default test" finished-at="2022-11-09T02:48:33 EET" duration-ms="48992">
+    <test started-at="2022-11-10T01:08:44 EET" name="FactoringPageTests" finished-at="2022-11-10T01:10:16 EET" duration-ms="91281">
+      <class name="com.swedbank.factoring.automation.testcases.Test_FactoringCalculator">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:09:06 EET" duration-ms="21434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:09:06 EET" duration-ms="21222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:09:06 EET" duration-ms="21311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invoiceAmountAplhaNumericValidation()[pri:8, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:06 EET" name="invoiceAmountAplhaNumericValidation" finished-at="2022-11-10T01:09:07 EET" duration-ms="1765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invoiceAmountAplhaNumericValidation -->
+        <test-method signature="invoiceAmountEmptyValidation()[pri:9, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:06 EET" name="invoiceAmountEmptyValidation" finished-at="2022-11-10T01:09:07 EET" duration-ms="767" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [This field is required] but found [Please enter a valid number]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [This field is required] but found [Please enter a valid number]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.invoiceAmountEmptyValidation(Test_FactoringCalculator.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invoiceAmountEmptyValidation -->
+        <test-method signature="sectionDefaultValidations()[pri:7, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:06 EET" name="sectionDefaultValidations" finished-at="2022-11-10T01:09:10 EET" duration-ms="3776" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc7251f3f8af14736eda1e8f23b973c7, getElementAttribute {id=c13ba8b2-9bb2-4cd9-9d34-063fb9d076de, name=value}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54136}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54136/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (bc7251f3f8af14736eda1e8f23b973c7)] -> xpath: //input[@name='calc_d5']]
+Session ID: bc7251f3f8af14736eda1e8f23b973c7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc7251f3f8af14736eda1e8f23b973c7, getElementAttribute {id=c13ba8b2-9bb2-4cd9-9d34-063fb9d076de, name=value}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54136}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54136/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (bc7251f3f8af14736eda1e8f23b973c7)] -> xpath: //input[@name='calc_d5']]
+Session ID: bc7251f3f8af14736eda1e8f23b973c7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:158)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getAttribute(Unknown Source)
+at com.swedbank.factoring.automation.pages.FactoringCalculatorPage.getDefaultInvoiceAmount(FactoringCalculatorPage.java:62)
+at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.sectionDefaultValidations(Test_FactoringCalculator.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sectionDefaultValidations -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:06 EET" name="setup" finished-at="2022-11-10T01:09:21 EET" duration-ms="14316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:07 EET" name="tearDown" finished-at="2022-11-10T01:09:08 EET" duration-ms="1123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invoiceAmountEmptyValidation status=FAILURE method=Test_FactoringCalculator.invoiceAmountEmptyValidation()[pri:9, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:07 EET" name="setup" finished-at="2022-11-10T01:09:21 EET" duration-ms="13462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:07 EET" name="tearDown" finished-at="2022-11-10T01:09:11 EET" duration-ms="3034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invoiceAmountAplhaNumericValidation status=SUCCESS method=Test_FactoringCalculator.invoiceAmountAplhaNumericValidation()[pri:8, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:08 EET" name="setup" finished-at="2022-11-10T01:09:23 EET" duration-ms="15164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:10 EET" name="tearDown" finished-at="2022-11-10T01:09:12 EET" duration-ms="1822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sectionDefaultValidations status=FAILURE method=Test_FactoringCalculator.sectionDefaultValidations()[pri:7, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:11 EET" name="setup" finished-at="2022-11-10T01:09:24 EET" duration-ms="13869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:12 EET" name="setup" finished-at="2022-11-10T01:09:26 EET" duration-ms="13986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:17 EET" name="setup" finished-at="2022-11-10T01:09:29 EET" duration-ms="11475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:20 EET" name="setup" finished-at="2022-11-10T01:09:30 EET" duration-ms="10598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="advanceRateValidation()[pri:11, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:21 EET" name="advanceRateValidation" finished-at="2022-11-10T01:09:22 EET" duration-ms="1565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advanceRateValidation -->
+        <test-method signature="invoiceAmountZeroValidation()[pri:10, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:21 EET" name="invoiceAmountZeroValidation" finished-at="2022-11-10T01:09:21 EET" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invoiceAmountZeroValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:21 EET" name="tearDown" finished-at="2022-11-10T01:09:22 EET" duration-ms="1109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invoiceAmountZeroValidation status=SUCCESS method=Test_FactoringCalculator.invoiceAmountZeroValidation()[pri:10, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:22 EET" name="tearDown" finished-at="2022-11-10T01:09:24 EET" duration-ms="2266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=advanceRateValidation status=SUCCESS method=Test_FactoringCalculator.advanceRateValidation()[pri:11, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:22 EET" name="setup" finished-at="2022-11-10T01:09:33 EET" duration-ms="10493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="interestRateAlphaNumericValidation()[pri:12, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:23 EET" name="interestRateAlphaNumericValidation" finished-at="2022-11-10T01:09:23 EET" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- interestRateAlphaNumericValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:23 EET" name="tearDown" finished-at="2022-11-10T01:09:25 EET" duration-ms="1314" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=interestRateAlphaNumericValidation status=SUCCESS method=Test_FactoringCalculator.interestRateAlphaNumericValidation()[pri:12, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="interestRateEmptyValidation()[pri:13, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:24 EET" name="interestRateEmptyValidation" finished-at="2022-11-10T01:09:26 EET" duration-ms="1511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- interestRateEmptyValidation -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:24 EET" name="setup" finished-at="2022-11-10T01:09:42 EET" duration-ms="17571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:25 EET" name="setup" finished-at="2022-11-10T01:09:41 EET" duration-ms="15823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:26 EET" name="tearDown" finished-at="2022-11-10T01:09:28 EET" duration-ms="1818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=interestRateEmptyValidation status=SUCCESS method=Test_FactoringCalculator.interestRateEmptyValidation()[pri:13, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="interestRateAboveLimitsValidation()[pri:14, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:26 EET" name="interestRateAboveLimitsValidation" finished-at="2022-11-10T01:09:28 EET" duration-ms="1339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- interestRateAboveLimitsValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:28 EET" name="tearDown" finished-at="2022-11-10T01:09:29 EET" duration-ms="1276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=interestRateAboveLimitsValidation status=SUCCESS method=Test_FactoringCalculator.interestRateAboveLimitsValidation()[pri:14, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:28 EET" name="setup" finished-at="2022-11-10T01:09:42 EET" duration-ms="14259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="paymentTermValidation()[pri:15, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:29 EET" name="paymentTermValidation" finished-at="2022-11-10T01:09:30 EET" duration-ms="1180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentTermValidation -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:29 EET" name="setup" finished-at="2022-11-10T01:09:41 EET" duration-ms="12359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:30 EET" name="tearDown" finished-at="2022-11-10T01:09:31 EET" duration-ms="1150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=paymentTermValidation status=SUCCESS method=Test_FactoringCalculator.paymentTermValidation()[pri:15, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="commissionFeesAlphaNumericValidation()[pri:16, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:30 EET" name="commissionFeesAlphaNumericValidation" finished-at="2022-11-10T01:09:30 EET" duration-ms="73" status="FAIL">
+          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
+            <message>
+              <![CDATA[move target out of bounds
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3fe86dbdc88b9ec0d7ee1ca4a6d2fb8, actions {actions=[org.openqa.selenium.interactions.Sequence@67300583]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54588}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54588/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a3fe86dbdc88b9ec0d7ee1ca4a6d2fb8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3fe86dbdc88b9ec0d7ee1ca4a6d2fb8, actions {actions=[org.openqa.selenium.interactions.Sequence@67300583]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54588}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54588/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a3fe86dbdc88b9ec0d7ee1ca4a6d2fb8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:615)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+at com.swedbank.factoring.automation.pages.FactoringCalculatorPage.commissionFeesAlphaNumericValidation(FactoringCalculatorPage.java:244)
+at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.commissionFeesAlphaNumericValidation(Test_FactoringCalculator.java:107)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- commissionFeesAlphaNumericValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:30 EET" name="tearDown" finished-at="2022-11-10T01:09:32 EET" duration-ms="1388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=commissionFeesAlphaNumericValidation status=FAILURE method=Test_FactoringCalculator.commissionFeesAlphaNumericValidation()[pri:16, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="applyButtonValidation()[pri:18, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:33 EET" name="applyButtonValidation" finished-at="2022-11-10T01:09:34 EET" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyButtonValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:34 EET" name="tearDown" finished-at="2022-11-10T01:09:37 EET" duration-ms="2170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=applyButtonValidation status=SUCCESS method=Test_FactoringCalculator.applyButtonValidation()[pri:18, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="docAndFeesTabGeneralConditionsValidation()[pri:20, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:41 EET" name="docAndFeesTabGeneralConditionsValidation" finished-at="2022-11-10T01:09:43 EET" duration-ms="2325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- docAndFeesTabGeneralConditionsValidation -->
+        <test-method signature="docAndfeesClaimDocValidation()[pri:22, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:41 EET" name="docAndfeesClaimDocValidation" finished-at="2022-11-10T01:09:46 EET" duration-ms="4345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- docAndfeesClaimDocValidation -->
+        <test-method signature="docAndFeesInvoiceListValidation()[pri:21, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:42 EET" name="docAndFeesInvoiceListValidation" finished-at="2022-11-10T01:10:15 EET" duration-ms="32772" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4a513d0098e625afadd4c1c2ac97f1e, clickElement {id=603ca9f6-fa32-4a4d-bb3e-13fb59c1f754}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54650/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (c4a513d0098e625afadd4c1c2ac97f1e)] -> xpath: //a[text()='List of invoices']]
+Session ID: c4a513d0098e625afadd4c1c2ac97f1e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.87)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c4a513d0098e625afadd4c1c2ac97f1e, clickElement {id=603ca9f6-fa32-4a4d-bb3e-13fb59c1f754}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54650}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54650/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (c4a513d0098e625afadd4c1c2ac97f1e)] -> xpath: //a[text()='List of invoices']]
+Session ID: c4a513d0098e625afadd4c1c2ac97f1e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.swedbank.factoring.automation.pages.FactoringCalculatorPage.docAndFeesInvoiceListValidation(FactoringCalculatorPage.java:323)
+at com.swedbank.factoring.automation.testcases.Test_FactoringCalculator.docAndFeesInvoiceListValidation(Test_FactoringCalculator.java:148)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- docAndFeesInvoiceListValidation -->
+        <test-method signature="howToApplyTabValidation()[pri:19, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:42 EET" name="howToApplyTabValidation" finished-at="2022-11-10T01:09:44 EET" duration-ms="1999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- howToApplyTabValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:43 EET" name="tearDown" finished-at="2022-11-10T01:09:44 EET" duration-ms="964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=docAndFeesTabGeneralConditionsValidation status=SUCCESS method=Test_FactoringCalculator.docAndFeesTabGeneralConditionsValidation()[pri:20, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:44 EET" name="tearDown" finished-at="2022-11-10T01:09:45 EET" duration-ms="1073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=howToApplyTabValidation status=SUCCESS method=Test_FactoringCalculator.howToApplyTabValidation()[pri:19, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:09:46 EET" name="tearDown" finished-at="2022-11-10T01:10:15 EET" duration-ms="29717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=docAndfeesClaimDocValidation status=SUCCESS method=Test_FactoringCalculator.docAndfeesClaimDocValidation()[pri:22, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082]" started-at="2022-11-10T01:10:15 EET" name="tearDown" finished-at="2022-11-10T01:10:16 EET" duration-ms="995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=docAndFeesInvoiceListValidation status=FAILURE method=Test_FactoringCalculator.docAndFeesInvoiceListValidation()[pri:21, instance:com.swedbank.factoring.automation.testcases.Test_FactoringCalculator@4efac082] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swedbank.factoring.automation.testcases.Test_FactoringCalculator -->
       <class name="com.swedbank.factoring.automation.testcases.Test_LandingPage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:44 EET" name="setup" finished-at="2022-11-09T02:47:49 EET" duration-ms="4879" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:09:02 EET" duration-ms="17284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="landingPage()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:49 EET" name="landingPage" finished-at="2022-11-09T02:47:49 EET" duration-ms="53" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- landingPage -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:49 EET" name="setup" finished-at="2022-11-09T02:47:53 EET" duration-ms="3858" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:08:57 EET" duration-ms="12800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="becomeACustomer()[pri:1, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:53 EET" name="becomeACustomer" finished-at="2022-11-09T02:47:55 EET" duration-ms="1508" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:08:59 EET" duration-ms="14018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:09:03 EET" duration-ms="18577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="langOnLandingPage()[pri:3, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:08:57 EET" name="langOnLandingPage" finished-at="2022-11-10T01:09:36 EET" duration-ms="39190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- langOnLandingPage -->
+        <test-method signature="becomeACustomer()[pri:1, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:08:59 EET" name="becomeACustomer" finished-at="2022-11-10T01:09:06 EET" duration-ms="7000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- becomeACustomer -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:55 EET" name="setup" finished-at="2022-11-09T02:47:58 EET" duration-ms="3885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="navigatingTabs()[pri:2, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@25084a1e]" started-at="2022-11-09T02:47:58 EET" name="navigatingTabs" finished-at="2022-11-09T02:48:33 EET" duration-ms="34783" status="PASS">
+        <test-method signature="navigatingTabs()[pri:2, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:09:02 EET" name="navigatingTabs" finished-at="2022-11-10T01:09:37 EET" duration-ms="35634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigatingTabs -->
+        <test-method signature="landingPage()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:09:03 EET" name="landingPage" finished-at="2022-11-10T01:09:04 EET" duration-ms="960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:09:04 EET" name="tearDown" finished-at="2022-11-10T01:09:06 EET" duration-ms="2248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=landingPage status=SUCCESS method=Test_LandingPage.landingPage()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:09:06 EET" name="tearDown" finished-at="2022-11-10T01:09:07 EET" duration-ms="1616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=becomeACustomer status=SUCCESS method=Test_LandingPage.becomeACustomer()[pri:1, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:09:36 EET" name="tearDown" finished-at="2022-11-10T01:09:39 EET" duration-ms="2510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=langOnLandingPage status=SUCCESS method=Test_LandingPage.langOnLandingPage()[pri:3, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a]" started-at="2022-11-10T01:09:37 EET" name="tearDown" finished-at="2022-11-10T01:09:40 EET" duration-ms="2569" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigatingTabs status=SUCCESS method=Test_LandingPage.navigatingTabs()[pri:2, instance:com.swedbank.factoring.automation.testcases.Test_LandingPage@2d710f1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.swedbank.factoring.automation.testcases.Test_LandingPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.swedbank.factoring.automation.testcases.Test_LoginPage">
+        <test-method is-config="true" signature="datDrivenSuite()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:08:44 EET" name="datDrivenSuite" finished-at="2022-11-10T01:08:44 EET" duration-ms="388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datDrivenSuite -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:09:06 EET" duration-ms="21393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:08:57 EET" duration-ms="12800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:08:44 EET" name="setup" finished-at="2022-11-10T01:09:04 EET" duration-ms="19777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="usingApplyButton()[pri:5, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:08:57 EET" name="usingApplyButton" finished-at="2022-11-10T01:09:32 EET" duration-ms="35112" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='button -left' and text()='Apply']"}
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef852c7ec8d6641cfd65011b5be69eb4, findElement {using=xpath, value=//button[@class='button -left' and text()='Apply']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54133/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef852c7ec8d6641cfd65011b5be69eb4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='button -left' and text()='Apply']"}
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'GE00371M.lan', ip: '2001:7d0:82c0:ef00:5c8f:3943:fecb:df8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.8', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ef852c7ec8d6641cfd65011b5be69eb4, findElement {using=xpath, value=//button[@class='button -left' and text()='Apply']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/0m/fvmjrzt11z5...}, goog:chromeOptions: {debuggerAddress: localhost:54133}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54133/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ef852c7ec8d6641cfd65011b5be69eb4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at com.swedbank.factoring.automation.pages.LoginPage.usingApplyButton(LoginPage.java:77)
+at com.swedbank.factoring.automation.testcases.Test_LoginPage.usingApplyButton(Test_LoginPage.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usingApplyButton -->
+        <test-method signature="usingLoginButton()[pri:6, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:09:04 EET" name="usingLoginButton" finished-at="2022-11-10T01:09:18 EET" duration-ms="14148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usingLoginButton -->
+        <test-method signature="usingSwedBanklogo()[pri:4, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:09:06 EET" name="usingSwedBanklogo" finished-at="2022-11-10T01:09:16 EET" duration-ms="10138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usingSwedBanklogo -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:09:16 EET" name="tearDown" finished-at="2022-11-10T01:09:17 EET" duration-ms="1175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=usingSwedBanklogo status=SUCCESS method=Test_LoginPage.usingSwedBanklogo()[pri:4, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:09:18 EET" name="tearDown" finished-at="2022-11-10T01:09:20 EET" duration-ms="1386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=usingLoginButton status=SUCCESS method=Test_LoginPage.usingLoginButton()[pri:6, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f]" started-at="2022-11-10T01:09:32 EET" name="tearDown" finished-at="2022-11-10T01:09:34 EET" duration-ms="1120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=usingApplyButton status=FAILURE method=Test_LoginPage.usingApplyButton()[pri:5, instance:com.swedbank.factoring.automation.testcases.Test_LoginPage@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swedbank.factoring.automation.testcases.Test_LoginPage -->
+    </test> <!-- FactoringPageTests -->
+  </suite> <!-- FactoringTestSuite -->
 </testng-results>
