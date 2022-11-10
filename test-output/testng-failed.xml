@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FactoringTestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="FactoringPageTests(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FactoringTestSuite]">
+  <test thread-count="5" name="FactoringPageTests(failed)" parallel="methods">
     <classes>
       <class name="com.swedbank.factoring.automation.testcases.Test_FactoringCalculator">
         <methods>
-          <include name="sectionDefaultValidations"/>
-          <include name="docAndFeesInvoiceListValidation"/>
+          <include name="invoiceAmountAplhaNumericValidation"/>
           <include name="datDrivenSuite"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="commissionFeesAlphaNumericValidation"/>
           <include name="invoiceAmountEmptyValidation"/>
         </methods>
       </class> <!-- com.swedbank.factoring.automation.testcases.Test_FactoringCalculator -->
-      <class name="com.swedbank.factoring.automation.testcases.Test_LoginPage">
-        <methods>
-          <include name="usingApplyButton"/>
-          <include name="datDrivenSuite"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.swedbank.factoring.automation.testcases.Test_LoginPage -->
     </classes>
   </test> <!-- FactoringPageTests(failed) -->
 </suite> <!-- Failed suite [FactoringTestSuite] -->
